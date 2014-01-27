@@ -29,7 +29,7 @@ def MySQLDoc():
     return [' '.join(documents)]
 
 def combination(doc):
-    kwre = rake.launch_re(doc, "LongStopList.txt")
+    kwre = rake.launch_re(doc, "./LongStopList.txt")
     kwnltk = rake_adapted.launch_nltk(doc)
     comb = kwnltk + kwre
     return comb
