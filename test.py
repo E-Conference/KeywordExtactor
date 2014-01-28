@@ -12,11 +12,16 @@ def kw(number):
 
 @app.route('/')
 def index():    
-    return hierarchiser.go()
+    return "nothing to do here"
 
 @app.route('/clusters/<int:kw_number>/<int:cluster_number>')
 def clusters(kw_number, cluster_number):
     return clustering.clusterIt(kw_number, cluster_number)
+
+@app.route('/hierarchy/<int:kw_number>/<int:cluster_number>')
+def hierarchy(kw_number, cluster_number):
+    clusters = clustering.clusterIt(kw_number, cluster_number)
+    return hierarchiser.go(clusters)
 
 if __name__ == '__main__':
     app.run(debug = True)

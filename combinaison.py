@@ -99,10 +99,8 @@ def launch(kwnb):
         j=0
         for kw in sorted(dockw, key=operator.itemgetter(1), reverse=True):            
             if j<kwnb:                
-                ret = ret + (str(kw[0]) + "<br/>")                
+                ret = ret + str(kw[0]) + ";" + str(kw[1]) + "<br/>"
                 j+=1
             else:
                 break        
         return ret
-
-#launch(100)

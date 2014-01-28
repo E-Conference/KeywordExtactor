@@ -43,5 +43,6 @@ def clusterIt(kwnb, clusternb):
     classified_examples = [cluster.classify(vectorspaced(title)) for title in job_titles]
     
     for cluster_id, title in sorted(zip(classified_examples, job_titles)):
-        ret = ret + (str(cluster_id) + ";" + str(title) + "<br/>")
-    return ret
+        if(title != ''):
+            ret = ret + (str(cluster_id) + ";" + str(title) + "<br/>")
+    return ret[:-5]
