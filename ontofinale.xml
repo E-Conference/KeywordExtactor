@@ -1,0 +1,383 @@
+
+<rdf:RDF
+   xmlns:ns1="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/cedar+reasoner+perform">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/reasoning"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/ability+permits">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/reasoners">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/reporting+travel+disruption">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/concept+classification">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/tv+recommender+systems">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/reasoning">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/reasoners"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/mailing+lists">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/relational+data">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/relational+table">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/generate+rdf+triples">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/rdf"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/formal+concept+analysis">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/concept+lattices"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/determine+level">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/user+model">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/helping+people+dealing">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/direct+mapping">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/standards+consist">
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/standards"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/web">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/perform+computational+tasks">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/cedar+reasoner+perform"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/semantic+web+scaling">
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/semantic+web"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/edit+distance+algorithms">
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/reasoning+algorithms"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/structured+data">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/data+management"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/decision-making+processes">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/work+focuses">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/work"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/human+workers">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/concept+lattices">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/well-known+methods">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/tableau+method"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/bug+tracking+systems">
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/cedar+system"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/personalization+techniques+aim">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/rdf+mapping+language">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/direct+mapping"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/semantic+web">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/reasoning+algorithms">
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/popular+reasoners"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/provenance">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/description+logic+el+">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/tableau+method">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/best+systems">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/recommendation+algorithms">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/good+tools">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/stored+knowledge">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/large-scale+reasoning.in">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/reconstructing+provenance">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/provenance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/lattice+operations">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/suitable+workers">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/memory+requirements">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/work">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/content-based+approach">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/rdfs">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/single+knowledge+base">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/stored+knowledge"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/data+management">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/custom+notifications">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/data+replication+approaches">
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/structured+data"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/user+requirements">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/enables+serendipitous+recommendations">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/popular+reasoners">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/future+work">
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/work"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/semantic+gap">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/shared+folder+setting">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/standard+filesystem+metadata">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/issue+recommendations">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/cedar">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/knowledge+base">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/answers">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/complementary+specifications">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/introduce+ditto">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/rapid+growth">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/terms+appearing">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/implicit+assumption">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/yed+diagram+editor">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/data+replication">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/data+management"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/online+service">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/cedar+system">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <rdfs:subClassOf rdf:resource="http://data.live-con.com/resource/keyword/cedar"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/standards">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/relational+databases">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/average+recall">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/performance+measure">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/alert+project">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/embarrassingly+parallel">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/relatedness+measures">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/channels">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/ultimate+goal">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/query+answering">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/average+precision">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/multi-signal+pipeline">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/user+perspective">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/rdf">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/taxonomy+classification">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/1/1the-12th-international-semantic-web-conference"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/language+barrier">
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.live-con.com/resource/keyword/content+systems+assume">
+    <ns1:subject rdf:resource="http://data.live-con.com/resource/conference/4/4conference-event"/>
+    <rdfs:Class rdf:resource="http://data.live-con.com/resource/keyword/"/>
+  </rdf:Description>
+</rdf:RDF>

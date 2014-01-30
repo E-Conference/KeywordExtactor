@@ -1,45 +1,24 @@
-def go(clusters):
-    ret = ""
-    i = 0
-    clusters_arr = clusters.split("<br/>")
-    size = len(clusters_arr)
-    total = [None] * size
-    terms = [None] * size
-    scores = [None] * size
-    cluster_ids = [None] * size
+from stemming.porter2 import stem
 
-    for cluster in clusters.split("<br/>"):        
-            arr = [None] * 4
-            cl_arr = cluster.split(";")
-            arr[0] = cl_arr[0]        
-            arr[1] = cl_arr[1]        
-            arr[2] = ""
-            arr[3] = cl_arr[2]
-            total[i] = arr
-            terms[i] = arr[1]
-            scores[i] = arr[3]
-            cluster_ids[i] = arr[0]    
-            i = i + 1
+def go(keywords):
+    ret = list()
 
-    i=0
-    for keyword in total:
-        for term in terms:            
-            if (keyword[1] in term.split(" ")) | (father(keyword[1],term,keyword[1][3],scores[i])):
-                if (keyword[1] != term) & (cluster_ids[i] == keyword[0]):
-                    keyword[2] = term
-        ret = ret + (keyword[0] + ";" + keyword[1] + ";" + keyword[2] + ";" + scores[i] + "<br/>")        
-        i = i+1
+    for keyword1 in keywords:        
+        for keyword2 in keywords:            
+            if father(keyword1,keyword2):                     
+                keyword1.assignFather(keyword2)                    
+        ret.append(keyword1)
     return ret
 
 def parent(kw1, kw2):
-    for subterm1 in kw1.split(" "):
-        for subterm2 in kw2.split(" "):
-            if subterm1 == subterm2:
+    for subterm1 in kw1.keyword.split(" "):
+        for subterm2 in kw2.keyword.split(" "):
+            if stem(subterm1) == stem(subterm2):
                 return True
     return False
 
-def father(kw1, kw2, score1, score2):
-    if (kw1.split(" ") > kw2.split(" ")) & (parent(kw1,kw2)) & (score1>score2):
+def father(kw1, kw2):    
+    if ((len(kw1.keyword.split(" ")) > len(kw2.keyword.split(" "))) | (len(kw1.keyword) >= len(kw2.keyword)))  & (parent(kw1,kw2)) & (kw1.score>kw2.score) & (kw1.cluster == kw2.cluster):
         return True
     return False              
 
