@@ -5,6 +5,7 @@ import combinaison
 import clustering
 import ontology
 from flask import Response
+from flask import request
 
 app = Flask(__name__)
 
@@ -12,9 +13,10 @@ app = Flask(__name__)
 def index():    
     return "nothing to do here"
 
-@app.route('/onto/<int:kw_number>/<int:cluster_number>')
-def onto(kw_number, cluster_number):
-    clusters = clustering.clusterAll(kw_number, cluster_number)
+@app.route('/onto/<int:knb>/<int:cnb>')
+def onto(knb, cnb):    
+    iri = request.args['iri']    
+    clusters = clustering.clusterAll(knb, cnb, iri)        
     bag = list()
     ret = ""    
     for cluster in clusters:

@@ -35,11 +35,14 @@ import urllib, urllib2
 
 class PaperUri:
     uri_conf = ""
-    abstract = list()
+    abstracts = list()
     
     def __init__(self, uri, abs):
         self.uri_conf = uri
         self.abstract = abs
+
+    def addAbstract(self, abs):
+        self.abstracts.append(abs)
 
     def getFirstAbs(self):
         for abs in self.abstract:
@@ -63,53 +66,24 @@ class Keyword:
     def assignFather(self, father):
         self.father = father
 
-class Concatener:
-    documents = list()
-    concats = list()
-
-    def __init__(self, list):
-        self.documents = list
-
-    def getAbstracts(self, uri):
-        conc = PaperUri(uri, list())
-        for pu in self.documents:
-            if(pu.uri_conf == uri):
-                conc.abstract.append(pu.getFirstAbs())
-        return conc
-
-    def treatedUri(self, uri):
-        for pu in self.concats:
-            if pu.uri_conf == uri:
-                return True
-        return False
-    
-    def concat(self):        
-        for pu in self.documents:
-            if pu != None:
-                if not(self.treatedUri(pu.uri_conf)):
-                    conc = self.getAbstracts(pu.uri_conf)
-                    self.concats.append(conc)
-    
-def SPARQL(url="http://data.live-con.com/sparql?query=",query="select ?s ?a where { ?s swc:hasRelatedDocument ?o. ?o swrc:abstract ?a }"):
+def SPARQL(conf_uri):
+    url="http://data.live-con.com/sparql?query="    
+    query="select ?a where { <" + conf_uri + "> swc:hasRelatedDocument?d. ?d swrc:abstract ?a }"
     prefixes = "PREFIX dc: <http://purl.org/dc/elements/1.1/> PREFIX db: <http://data.live-con.com/resource/> PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX swrc-ext: <http://www.cs.vu.nl/~mcaklein/onto/swrc_ext/2005/05#> PREFIX meta: <http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#> PREFIX dcterms: <http://purl.org/dc/terms/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX d2r: <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> PREFIX owl: <http://www.w3.org/2002/07/owl#> PREFIX map: <http://data.live-con.com/resource/#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX swrc: <http://swrc.ontoware.org/ontology#> PREFIX ical: <http://www.w3.org/2002/12/cal/ical#> PREFIX vocab: <http://data.live-con.com/resource/vocab/> PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology#>"
     query = prefixes + " " + query
-    documents = list()
+
+    documents = PaperUri(conf_uri, list())
     xml = urllib2.urlopen(url + urllib.quote(query)).read()
-    soup = BeautifulSoup(xml)
-    ret = ""
-    for result in soup.findAll("result"):
-        for uri in result.findAll("uri"):
-            list_ = list()
-            list_.append(result.find("literal").string)            
-            documents.append(PaperUri(uri.string, list_))
-    concatener = Concatener(documents)
-    concatener.concat()
-    return concatener.concats
+    soup = BeautifulSoup(xml)    
+
+    for literal in soup.findAll("literal"):
+        documents.addAbstract(literal.string)            
+    return documents
 
 def combination(doc):
     kwre = rake.launch_re(doc, "./LongStopList.txt")
     kwnltk = rake_adapted.launch_nltk(doc)
-    comb = kwnltk + kwre
+    comb = kwnltk + kwre    
     return comb
 
 def HasNoNum(kw):
@@ -172,20 +146,19 @@ def NotIn(string, list):
             return False
     return True
 
-def launch(kwnb):    
-    bunch = SPARQL()
+def launch(kwnb, conf_uri):    
+    documents = SPARQL(conf_uri)
     final = list()
-    for documents in bunch:
-        ret = list()
-        j=0
-        dockws = FilteringKw(documents.abstract)        
-        for dockw in dockws:            
-            for kw in sorted(dockw, key=operator.itemgetter(1), reverse=True):            
-                if j<kwnb:                                       
-                    if NotIn(kw[0],ret):
-                        ret.append(Keyword(documents.uri_conf,kw[0],str(kw[1])))
-                        j+=1
-                else:
-                    break
-        final.append(ret)
+    ret = list()        
+    dockws = FilteringKw(documents.abstracts)
+    j=0
+    for dockw in dockws:        
+        for kw in sorted(dockw, key=operator.itemgetter(1), reverse=True):            
+            if j<kwnb:                                       
+                if NotIn(kw[0],ret):
+                    ret.append(Keyword(documents.uri_conf,kw[0],str(kw[1])))
+                    j+=1
+            else:
+                break
+    final.append(ret)
     return final

@@ -10,8 +10,8 @@ import nltk.stem
 stemmer_func = nltk.stem.snowball.EnglishStemmer().stem
 stopwords = set(nltk.corpus.stopwords.words('english'))
 
-def clusterAll(kwnb, clusternb):
-    bag = combinaison.launch(kwnb)
+def clusterAll(kwnb, clusternb, conf_uri):
+    bag = combinaison.launch(kwnb, conf_uri)
     final = list()
     for keywords in bag:
         final.append(clusterIt(kwnb, clusternb, keywords))
