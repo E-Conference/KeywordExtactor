@@ -8,7 +8,6 @@ import re
 import operator
 import math
 from datetime import datetime, time
-import MySQLdb
 debug = False
 test = True
 

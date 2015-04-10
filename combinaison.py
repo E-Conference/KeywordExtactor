@@ -3,7 +3,6 @@ import rake_adapted
 import rake
 from os import sys
 import re
-import MySQLdb
 import re
 import operator
 import math
@@ -11,27 +10,6 @@ import codecs
 from datetime import datetime, time
 from BeautifulSoup import BeautifulSoup 
 import urllib, urllib2
-
-##def MySQLDoc():
-##    db = MySQLdb.connect(host="127.0.0.1", user="wwwConf", passwd="dataconfTER", db="livecon", port=3306)
-##    #db = MySQLdb.connect(host="localhost", user="root", passwd="", db="wwwconference")
-##    cur = db.cursor()
-##
-##    cur.execute("SELECT COUNT(*) FROM paper WHERE length(abstract)>150")
-##    for row in cur.fetchall():
-##        max_size = int(row[0])
-##
-##    print str(max_size) + " docs."
-##
-##    documents = [None] * max_size
-##
-##    cur.execute("SELECT title,abstract FROM paper WHERE length(abstract)>150")
-##
-##    i = 0
-##    for row in cur.fetchall() :
-##        documents[i] = str(row[0])+" "+str(row[1])
-##        i = i+1
-##    return [' '.join(documents)]
 
 class PaperUri:
     uri_conf = ""
@@ -67,8 +45,14 @@ class Keyword:
         self.father = father
 
 def SPARQL(conf_uri):
-    url="http://data.live-con.com/sparql?query="    
-    query="select ?a where { <" + conf_uri + "> swc:hasRelatedDocument?d. ?d swrc:abstract ?a }"
+    url = "http://localhost:3030/www2012/query?query="
+    query = "SELECT DISTINCT ?a " \
+            "WHERE {" \
+            "  <http://data.semanticweb.org/conference/www/2012> swc:isSuperEventOf* ?event ." \
+            "  ?event swc:hasRelatedDocument ?d ." \
+            "  ?d swrc:abstract ?a ." \
+            "  ?d dc:title ?t ." \
+            "} ORDER BY ?e"
     prefixes = "PREFIX dc: <http://purl.org/dc/elements/1.1/> PREFIX db: <http://data.live-con.com/resource/> PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX swrc-ext: <http://www.cs.vu.nl/~mcaklein/onto/swrc_ext/2005/05#> PREFIX meta: <http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/metadata#> PREFIX dcterms: <http://purl.org/dc/terms/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX d2r: <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> PREFIX owl: <http://www.w3.org/2002/07/owl#> PREFIX map: <http://data.live-con.com/resource/#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX swrc: <http://swrc.ontoware.org/ontology#> PREFIX ical: <http://www.w3.org/2002/12/cal/ical#> PREFIX vocab: <http://data.live-con.com/resource/vocab/> PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology#>"
     query = prefixes + " " + query
 
@@ -81,16 +65,13 @@ def SPARQL(conf_uri):
     return documents
 
 def combination(doc):
-    kwre = rake.launch_re(doc, "./LongStopList.txt")
+    #kwre = rake.launch_re(doc, "./LongStopList.txt")
     kwnltk = rake_adapted.launch_nltk(doc)
-    comb = kwnltk + kwre    
+    comb = kwnltk
     return comb
 
 def HasNoNum(kw):
     return not re.search('\d+', kw[0])
-
-def HasHigherScoreThan(kw):
-    return kw[1] > 1
 
 def x_EdCheck(kw_t):
     return not(kw_t[0].endswith("ed") | kw_t[0].endswith("y"))
@@ -135,7 +116,7 @@ def FilteringKw(documents):
             kw = tuple(kw)
             lenK = len(kw[0].split(" "))
             if lenK < 4:
-                if HasNoNum(kw) & HasHigherScoreThan(kw) & x_EdCheck(kw) & HasUnique(kw[0],currentArray) & specialCharsCheck(kw) & NotStopWord(kw, "LongStopList.txt"):
+                if HasNoNum(kw) & x_EdCheck(kw) & HasUnique(kw[0],currentArray) & specialCharsCheck(kw) & NotStopWord(kw, "LongStopList.txt"):
                     currentArray.append(kw)
         finalArray.append(currentArray)
     return list(finalArray)
